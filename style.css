@@ -4,8 +4,22 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #8cb9d5;
 }
 
 canvas {
     border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 43px -14px rgba(66, 68, 90, 1);
+}
+
+@media only screen and (max-width: 600px) {
+    canvas {
+        width: 100vw;
+        height: 400px;
+        border-radius: 0;
+    }
+    body {
+        align-items: normal;
+    }
 }
